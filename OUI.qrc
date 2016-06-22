@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/lib">
+        <file>oui.txt</file>
+    </qresource>
+</RCC>
