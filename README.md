@@ -4,6 +4,7 @@ MAC Address ORG/LLC Auto-Detection
 
 Dragging the result file of "arp -a" to the MacLLC.exe,You will find the Organization(LLC).
 
+Windows 7 & VS2013 & QT 5.7 Static
 ----------------------------------
 
 Example:
