@@ -18,19 +18,15 @@
 class llcadd
 {
 public:
-    llcadd();
+
+    llcadd(char* parpall);
 
 
 
 private:
 
-    void Init();
-    void Add(QString);
-
+    void loadoui();
     QString llclib;
-    bool    NewOui;
-
-
 
 };
 
