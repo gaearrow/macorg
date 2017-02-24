@@ -6,9 +6,8 @@ Dragging the result file of "arp -a" to the MacLLC.exe,You will find the Organiz
 
 Windows 7 & VS2013 & QT 5.7 Static
 
-----------------------------------
-
-Example:
+***
+## Example
 
 
 C:\Users\Gaearrow>arp -a >arp.txt
@@ -17,12 +16,10 @@ C:\Users\Gaearrow>MacLLC.exe arp.txt
 
 Oui Version =  Generated: Tue, 14 Feb 2017 11:20:05
 
-
-
 Success Add LLC to [C:/Users/Gaearrow/arp.txt-llc.txt]
 
 
-[arp.txt]
+### arp.txt
 
 Interface: 192.168.102.135 --- 0xe
   
@@ -42,7 +39,7 @@ Internet Address      Physical Address      Type
 
 
 
-[arp.txt-llc.txt]
+### arp.txt-llc.txt
 
 Interface: 192.168.102.135 --- 0xe
   
