@@ -8,7 +8,7 @@ QT       += core
 
 QT       -= gui
 
-TARGET = MacLLC
+TARGET = MacOrg
 CONFIG   += console
 CONFIG   -= app_bundle
 
@@ -16,10 +16,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    llcadd.cpp
+    orgadd.cpp
 
 RESOURCES += \
     OUI.qrc
 
 HEADERS += \
-    llcadd.h
+    orgadd.h

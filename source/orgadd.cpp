@@ -1,6 +1,6 @@
-#include "llcadd.h"
+#include "orgadd.h"
 
-llcadd::llcadd(char *parpall)
+orgadd::orgadd(char *parpall)
 {
     //Load oui.txt
     loadoui();
@@ -12,7 +12,7 @@ llcadd::llcadd(char *parpall)
         system("pause");
         return;
     }
-    QFile DstFile(SrcFile.fileName().append("-llc.txt"));
+    QFile DstFile(SrcFile.fileName().split('.')[0].append("-org.txt"));
     if(!DstFile.open(QIODevice::WriteOnly|QIODevice::Text)){
         printf("%s\n","Can't Create Result File!");
         system("pause");
@@ -43,7 +43,7 @@ llcadd::llcadd(char *parpall)
             continue;
         }
         if(line.contains("Internet Address") && line.contains("Physical Address")){
-            line.append("             LLC");
+            line.append("           ORG");
             out << line << endl;
             continue;
         }
@@ -51,7 +51,7 @@ llcadd::llcadd(char *parpall)
             sscanf(line.toLocal8Bit().constData(),"%s%s", ip, mac);
             sscanf(mac,"%8s",macllc);
             QString ml(macllc);
-            int start = llclib.indexOf(ml.toUpper(),Qt::CaseInsensitive);
+            int start = orglib.indexOf(ml.toUpper(),Qt::CaseInsensitive);
             if (start < 0){
                 line.append("         Not Found");
                 out << line << endl;
@@ -60,9 +60,9 @@ llcadd::llcadd(char *parpall)
             start = start + 18;
             int end = start;
             QString Dstline;
-            while(llclib.mid(end,1).compare("\n"))
+            while(orglib.mid(end,1).compare("\n"))
             {
-                Dstline.append(llclib.mid(end,1));
+                Dstline.append(orglib.mid(end,1));
                 end++;
             }
             line.append("        ");
@@ -72,7 +72,7 @@ llcadd::llcadd(char *parpall)
         }
 
     }
-    printf("Success Add LLC to [%s]\n",DstFile.fileName().toLocal8Bit().constData());
+    printf("Successfully add ORG to [%s]\n",DstFile.fileName().toLocal8Bit().constData());
 
     delete(ip);
     delete(mac);
@@ -84,7 +84,7 @@ llcadd::llcadd(char *parpall)
 
 //Load oui.txt
 //Download URL: http://standards-oui.ieee.org/oui/oui.txt
-void llcadd::loadoui()
+void orgadd::loadoui()
 {
     //Open oui.txt
     QFile OuiFile(":/lib/oui.txt");
@@ -103,6 +103,6 @@ void llcadd::loadoui()
         printf("Oui Version =%s\n",OuiVer.toLocal8Bit().constData());
     }
     //Load oui.txt
-    llclib = OuiFile.readAll();
+    orglib = OuiFile.readAll();
     OuiFile.close();
 }

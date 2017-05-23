@@ -1,5 +1,5 @@
 Interface: 192.168.102.135 --- 0xe
-  Internet Address      Physical Address      Type             LLC
+  Internet Address      Physical Address      Type           ORG
   192.168.102.2         00-50-56-f3-b8-2d     dynamic        VMware, Inc.
   192.168.102.3         90-7F-61-c3-b8-2d     dynamic        Chicony Electronics Co., Ltd.
   192.168.102.4         9C-8E-99-00-00-16     dynamic        Hewlett Packard

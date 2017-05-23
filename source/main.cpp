@@ -1,6 +1,6 @@
 #include <QCoreApplication>
 
-#include "llcadd.h"
+#include "orgadd.h"
 
 
 int main(int argc, char *argv[])
@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    llcadd la(argv[1]);
+    orgadd oa(argv[1]);
     return a.exec();
 }

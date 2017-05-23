@@ -1,5 +1,5 @@
-#ifndef LLCADD_H
-#define LLCADD_H
+#ifndef ORGADD_H
+#define ORGADD_H
 
 
 #include <QDir>
@@ -15,19 +15,19 @@
 #define MAX_SIZE_PACKET 1024*10
 
 
-class llcadd
+class orgadd
 {
 public:
 
-    llcadd(char* parpall);
+    orgadd(char* parpall);
 
 
 
 private:
 
     void loadoui();
-    QString llclib;
+    QString orglib;
 
 };
 
-#endif // LLCADD_H
+#endif // ORGADD_H
