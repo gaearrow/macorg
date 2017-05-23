@@ -24,19 +24,19 @@ Successfully add ORG to [C:/Users/Gaearrow/arp-all-org.txt]
 ```
 Interface: 192.168.102.135 --- 0xe
   
-Internet Address		Physical Address		Type
+Internet Address	Physical Address	Type
   
-192.168.102.2			00-50-56-f3-b8-2d		dynamic
+192.168.102.2		00-50-56-f3-b8-2d	dynamic
   
-192.168.102.3			90-7F-61-c3-b8-2d		dynamic
+192.168.102.3		90-7F-61-c3-b8-2d	dynamic
   
-192.168.102.4			9C-8E-99-00-00-16		dynamic
+192.168.102.4		9C-8E-99-00-00-16	dynamic
   
-192.168.102.5			00-F8-71-00-00-fc		dynamic
+192.168.102.5		00-F8-71-00-00-fc	dynamic
   
-239.255.255.250			01-00-5e-7f-ff-fa		static
+239.255.255.250		01-00-5e-7f-ff-fa	static
   
-255.255.255.255			ff-ff-ff-ff-ff-ff		static
+255.255.255.255		ff-ff-ff-ff-ff-ff	static
 ```
 
 
@@ -45,17 +45,17 @@ Internet Address		Physical Address		Type
 ```
 Interface: 192.168.102.135 --- 0xe
 
-Internet Address		Physical Address		Type			ORG
+Internet Address	Physical Address	Type		ORG
   
-192.168.102.2			00-50-56-f3-b8-2d		dynamic			VMware, Inc.
+192.168.102.2		00-50-56-f3-b8-2d	dynamic		VMware, Inc.
   
-192.168.102.3			90-7F-61-c3-b8-2d		dynamic			Chicony Electronics Co., Ltd.
+192.168.102.3		90-7F-61-c3-b8-2d	dynamic		Chicony Electronics Co., Ltd.
   
-192.168.102.4			9C-8E-99-00-00-16		dynamic			Hewlett Packard
+192.168.102.4		9C-8E-99-00-00-16	dynamic		Hewlett Packard
   
-192.168.102.5			00-F8-71-00-00-fc		dynamic			DGS Denmark A/S
+192.168.102.5		00-F8-71-00-00-fc	dynamic		DGS Denmark A/S
   
-239.255.255.250			01-00-5e-7f-ff-fa		static			Not Found
+239.255.255.250		01-00-5e-7f-ff-fa	static		Not Found
   
-255.255.255.255			ff-ff-ff-ff-ff-ff		static			Not Found
+255.255.255.255		ff-ff-ff-ff-ff-ff	static		Not Found
 ```
